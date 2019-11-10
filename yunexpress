@@ -1,0 +1,125 @@
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'/>
+<style type='text/css'>
+*,
+*:before,
+*:after,
+input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box
+}
+a:link {
+  text-decoration: none;
+  outline: none;
+  transition: all 0.25s;
+}
+a:visited,
+a:link:hover,
+a:visited:hover {
+  text-decoration: none;
+}
+body {
+  background: #ecf0f1 none repeat scroll top left;
+  color: #444;
+  font-family: 'Oxygen', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: normal;
+}
+.container {
+  background: #fff;
+  max-width: 320px;
+  margin: 2% auto;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+.title,
+.content {
+  margin: 2% auto;
+  display: table;
+  text-align: center;
+  font-size: 1.5em;
+  color: #999
+}
+.title {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #ccc
+}
+#kode-lacak {
+  padding: 10px;
+  text-align: left;
+  font-size: 85%
+}
+#kode-lacak form {
+  display: block;
+  position: relative;
+  clear: both;
+  overflow: hidden;
+  margin: auto;
+  text-align: center
+}
+#kode-lacak .cek-jne,
+#kode-lacak .cek-tiki,
+#kode-lacak .cek-pos {
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  padding: 2px 8px;
+  height: 33px;
+  line-height: 19px;
+  color: #626262;
+  background: #fff;
+  outline: none;
+  margin: 10px 0;
+  border: 1px solid #e3e3e3;
+  border-radius: 2px;
+  width: 70%;
+  float: left
+}
+#kode-lacak .cek-jne-button,
+#kode-lacak .cek-tiki-button,
+#kode-lacak .cek-pos-button {
+  display: inline-block;
+  vertical-align: middle;
+  height: 33px;
+  line-height: 1;
+  padding: 0 18px;
+  font-size: 13px;
+  color: #243140;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, .2);
+  background: #e5e7ed;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 27%;
+  outline: none;
+  margin: 10px 0 0 5px;
+  transition: background .6s;
+}
+#kode-lacak .cek-jne-button:hover,
+#kode-lacak .cek-jne-button:active,
+#kode-lacak .cek-tiki-button:hover,
+#kode-lacak .cek-tiki-button:active,
+#kode-lacak .cek-pos-button:hover,
+#kode-lacak .cek-pos-button:active {
+  background: #ee4f3d;
+  color: #fff
+}
+</style>
+<div class="content">Cek Nomor Resi</div>
+<div class="container">
+  <div id="kode-lacak">
+    Lacak resi <b>Yun Express</b>
+    <br />
+    <form method="" action="https://www.goomell.com/search/label/Cargo?max-results=16" name="" target="_blank">
+      <input id="" name="" size="14" class="cek-tiki" type="text" />
+      <input id="" name="" value="Tracking" class="cek-tiki-button" type="submit" />
+    </form>
+	</div>
+	</div>
