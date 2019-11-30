@@ -31,7 +31,7 @@ body {
 }
 .container {
   background: #fff;
-  max-width: 320px;
+  max-width: 720px;
   margin: 2% auto;
   padding: 10px;
   border-radius: 5px;
@@ -117,9 +117,11 @@ body {
   <div id="kode-lacak">
     Lacak resi <b>Sentral Cargo</b>
     <br />
-    <form method="post" action="https://sentralcargo.co.id/themes/sentra-cargo/assets/get_cekresi.php" name="input" >
-      <input id="s_resi" name="s_resi" size="7" class="cek-tiki" type="text" autocomplete="off" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" />
+    <form method="post" action="https://sentralcargo.co.id/themes/sentra-cargo/assets/get_cekresi.php" name="input" target="tampil" >
+      <input id="s_resi" name="s_resi" size="7" class="cek-tiki" type="text" />
       <input id="button" name="button" value="Cek" class="cek-tiki-button" type="submit" />
     </form>
 	</div>
+	<iframe name="tampil">
+</iframe>
 	</div>
