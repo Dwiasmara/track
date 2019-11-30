@@ -122,40 +122,4 @@ body {
       <input id="button" name="button" value="Cek" class="cek-tiki-button" type="submit" />
     </form>
 	</div>
-	            </section>
-            <section class="section-m cloud" id="result">
-		<div id="result-cek-resi">
-		</div>
-		<div id="result-scanned-resi">
-		</div>
-            </section>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123487741-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-123487741-1');
-</script>
-        <!--End Load Javascript-->
-<script>
-function scanned_resi(resi)
-{
-		$("#result-scanned-resi").html('');
-	$.ajax({
-		url: "https://sentralcargo.co.id/themes/sentra-cargo/assets/get_scannedresi.php",
-		type: 'POST',
-		data: {s_resi:resi},
-		success: 
-		function(data){
-			if (data){
-				$("#result-scanned-resi").html(data);
-			}
-		}
-	});
-}
-
-document.getElementById('s_resi').focus();
-</script>
-
 	</div>
