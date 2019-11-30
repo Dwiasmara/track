@@ -120,8 +120,15 @@ body {
     Lacak resi <b>TIKI</b>
     <br />
     <form method="post" action="https://sentralcargo.co.id/themes/sentra-cargo/assets/get_cekresi.php" name="input" target="_blank">
-      <input id="s_resi" name="s_resi" size="7" class="cek-tiki" type="text" />
+      <input id="s_resi" name="s_resi" size="7" class="cek-tiki" type="text" autocomplete="off" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" />
       <input id="button" name="button" value="Cek" class="cek-tiki-button" type="submit" />
     </form>
 	</div>
 	</div>
+           </section>
+            <section class="section-m cloud" id="result">
+		<div id="result-cek-resi">
+		</div>
+		<div id="result-scanned-resi">
+		</div>
+            </section>
