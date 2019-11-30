@@ -111,29 +111,7 @@ body {
   background: #ee4f3d;
   color: #fff
 }
-	<script type="text/javascript">
-  $(document).ready(function(){	
 
-			  $(".btn-ongkir").click(function(e){  // passing down the event  
-
-				resi=document.getElementById('s_resi').value;
-					$("#result-ongkir").html('Loading...');
-						$.ajax({
-						   url: "/themes/sentra-cargo/assets/get_cekresi.php",
-						   type: 'POST',
-						   data: {s_resi:resi},
-						   success: 
-						   function(data){
-							document.getElementById('s_resi').value='';
-							$("#result-cek-resi").html(data);
-							document.getElementById('s_resi').focus();
-							scanned_resi(resi);
-						   }
-					   });
-					   e.preventDefault(); // could also use: return false;
-			 });
-			 });
-	</script>	
 <div class="title">Widget JNE, TIKI, Pos Indonesia</div>
 <div class="content">Cek data nomor resi di bawah ini</div>
 <div class="container">
