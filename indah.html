@@ -7,7 +7,7 @@
 				resi=document.getElementById('s_resi').value;
 					$("#result-ongkir").html('Loading...');
 						$.ajax({
-						   url: "/themes/sentra-cargo/assets/get_cekresi.php",
+						   url: "https://sentralcargo.co.id/themes/sentra-cargo/assets/get_cekresi.php",
 						   type: 'POST',
 						   data: {s_resi:resi},
 						   success: 
@@ -78,7 +78,7 @@ function scanned_resi(resi)
 {
 		$("#result-scanned-resi").html('');
 	$.ajax({
-		url: "/themes/sentra-cargo/assets/get_scannedresi.php",
+		url: "https://sentralcargo.co.id/themes/sentra-cargo/assets/get_scannedresi.php",
 		type: 'POST',
 		data: {s_resi:resi},
 		success: 
