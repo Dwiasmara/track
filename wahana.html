@@ -117,16 +117,11 @@ body {
   <div id="kode-lacak">
     Lacak resi <b>Sentral Cargo</b>
     <br />
-    <form id="lacakresi" name="lacakresi" method="get" action="https://www.wahana.com/lacak-kiriman">
-       <div class="form-group">
-								  <label for="usr" class="font-size10 font-black textmain-white mb-9">Nomor Resi:</label>
-								  <input type="text" class="form-control font-size14 font-light mb-11" id="noresi" name="noresi" placeholder="Masukkan nomor resi">
-								  <div class="font-size10 font-light textmain-white"><i>Pisahkan dengan spasi maksimal 10 nomor resi</i></div>
-								</div>
-								<div class="form-group text-right">
-								  <button type="button" id="lacaksubmit" class="btn font-size16 font-black btn-bgmain-yellow textmain-blue px-23 py-12" style="line-height: 16px;">Lacak</button>
-								</div>
-							</form>
-							</div>
+    <form method="get" action="https://www.wahana.com/lacak-kiriman" name="input" target="tampil" >
+      <input id="noresi" name="noresi" size="7" class="cek-tiki" type="text" />
+      <input id="button" name="button" value="Cek" class="cek-tiki-button" type="submit" />
     </form>
+	</div>
+	<iframe name="tampil"
+		</iframe>
 	</div>
