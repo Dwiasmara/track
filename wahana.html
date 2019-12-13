@@ -31,7 +31,7 @@ body {
 }
 .container {
   background: #fff;
-  max-width: 320px;
+  max-width: 736px;
   margin: 2% auto;
   padding: 10px;
   border-radius: 5px;
@@ -63,9 +63,7 @@ body {
   margin: auto;
   text-align: center
 }
-#kode-lacak .cek-jne,
-#kode-lacak .cek-tiki,
-#kode-lacak .cek-pos {
+#kode-lacak .cek-tiki {
   text-align: left;
   display: inline-block;
   vertical-align: top;
@@ -81,9 +79,7 @@ body {
   width: 70%;
   float: left
 }
-#kode-lacak .cek-jne-button,
-#kode-lacak .cek-tiki-button,
-#kode-lacak .cek-pos-button {
+#kode-lacak .cek-tiki-button {
   display: inline-block;
   vertical-align: middle;
   height: 33px;
@@ -102,12 +98,8 @@ body {
   margin: 10px 0 0 5px;
   transition: background .6s;
 }
-#kode-lacak .cek-jne-button:hover,
-#kode-lacak .cek-jne-button:active,
 #kode-lacak .cek-tiki-button:hover,
-#kode-lacak .cek-tiki-button:active,
-#kode-lacak .cek-pos-button:hover,
-#kode-lacak .cek-pos-button:active {
+#kode-lacak .cek-tiki-button:active {
   background: #ee4f3d;
   color: #fff
 }
@@ -117,11 +109,11 @@ body {
   <div id="kode-lacak">
     Lacak resi <b>Sentral Cargo</b>
     <br />
-    <form method="get" action="https://www.wahana.com/lacak-kiriman.php" name="input" target="tampil" >
-      <input id="noresi" name="noresi" size="7" class="cek-tiki" type="text" />
+    <form method="post" action="https://sentralcargo.co.id/themes/sentra-cargo/assets/get_cekresi.php" name="input" target="tampil" >
+      <input id="s_resi" name="s_resi" size="7" class="cek-tiki" type="text" />
       <input id="button" name="button" value="Cek" class="cek-tiki-button" type="submit" />
     </form>
 	</div>
-	<iframe name="tampil"
+	<iframe name="tampil" width="736"
 		</iframe>
 	</div>
